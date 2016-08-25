@@ -1,0 +1,22 @@
+{
+  "name": "blockbased-delegates",
+  "version": "0.1.0",
+  "summary": "A short description of blockbased-delegates.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/blockbased-delegates",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ChristianRonningen": "christian.ronningen@ztory.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/blockbased-delegates.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "blockbased-delegates/Classes/**/*"
+}

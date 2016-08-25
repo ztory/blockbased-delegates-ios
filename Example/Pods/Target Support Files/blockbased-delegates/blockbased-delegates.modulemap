@@ -1,0 +1,6 @@
+framework module blockbased_delegates {
+  umbrella header "blockbased-delegates-umbrella.h"
+
+  export *
+  module * { export * }
+}

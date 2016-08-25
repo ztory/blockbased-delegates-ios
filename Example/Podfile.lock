@@ -1,0 +1,16 @@
+PODS:
+  - blockbased-delegates (0.1.0)
+
+DEPENDENCIES:
+  - blockbased-delegates (from `../`)
+
+EXTERNAL SOURCES:
+  blockbased-delegates:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  blockbased-delegates: b7da34c3baa4b890d6bafdc3cd3d11b156cd4d6c
+
+PODFILE CHECKSUM: da9e3d9ef95f560f90a34453afc407f1c8d47c0a
+
+COCOAPODS: 1.0.1

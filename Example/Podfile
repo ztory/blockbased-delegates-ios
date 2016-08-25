@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'blockbased-delegates_Example' do
+  pod 'blockbased-delegates', :path => '../'
+
+  target 'blockbased-delegates_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
