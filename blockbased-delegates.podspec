@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'blockbased-delegates'
+  s.name             = 'blockbased-delegates-ios'
   s.version          = '0.1.0'
   s.summary          = 'Convenience files added to add a block as delegate instead'
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/ztory/blockbased-delegates-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ChristianRonningen' => 'christian.ronningen@ztory.com' }
-  s.source           = { :git => 'https://github.com/ztory/blockbased-delegates.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ztory/blockbased-delegates-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
