@@ -5,6 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/blockbased-delegates.svg?style=flat)](http://cocoapods.org/pods/blockbased-delegates)
 [![Platform](https://img.shields.io/cocoapods/p/blockbased-delegates.svg?style=flat)](http://cocoapods.org/pods/blockbased-delegates)
 
+## Current implementation
+- [x] UIWebViewDelegate
+- [x] UIGestureRecognizer
+- [x] UIScrollViewDelegate
+- [x] UITextFieldDelegate
+- [x] UISearchBarDelegate
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
