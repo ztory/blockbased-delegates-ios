@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'BlockbasedDelegates'
-  s.module_name      = 'BlockbasedDelegates'
+  s.name             = 'BlockBasedDelegates'
+  s.module_name      = 'BlockBasedDelegates'
   s.version          = '0.1.0'
   s.summary          = 'Convenience files added to add a block as delegate instead'
 
