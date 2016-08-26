@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 //! Project version number for swift-date.
-FOUNDATION_EXPORT double blockbased_delegatesVersionNumber;
+FOUNDATION_EXPORT double BlockBasedDelegatesVersionNumber;
 
 //! Project version string for swift-date.
-FOUNDATION_EXPORT const unsigned char blockbased_delegatesVersionString[];
+FOUNDATION_EXPORT const unsigned char BlockBasedDelegatesVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <swift_date/PublicHeader.h>
 
