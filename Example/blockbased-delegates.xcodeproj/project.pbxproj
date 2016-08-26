@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* GestureRecognizerBlockDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* GestureRecognizerBlockDelegateTests.swift */; };
 		863ADBE28B47C27946A4C9FA /* Pods_blockbased_delegates_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0478F624E45F9C1D44059E6 /* Pods_blockbased_delegates_Tests.framework */; };
+		AA8189331D708698000AE745 /* BlockBasedDelegates.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AA8189321D708698000AE745 /* BlockBasedDelegates.podspec */; };
 		AAA2DFC81D6DCF2B00DC3283 /* ScrollViewBlockDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2DFC71D6DCF2B00DC3283 /* ScrollViewBlockDelegateTests.swift */; };
 		AAA2DFCE1D6ED2C400DC3283 /* TextFieldBlockDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2DFCD1D6ED2C400DC3283 /* TextFieldBlockDelegateTests.swift */; };
 		AAA2DFD21D6EFA7600DC3283 /* SearchBarBlockDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2DFD11D6EFA7600DC3283 /* SearchBarBlockDelegateTests.swift */; };
@@ -45,9 +46,9 @@
 		607FACE51AFB9204008FA782 /* blockbased-delegates_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "blockbased-delegates_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* GestureRecognizerBlockDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerBlockDelegateTests.swift; sourceTree = "<group>"; };
-		66BAE390D51FEBC95F6A0311 /* blockbased-delegates-ios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "blockbased-delegates-ios.podspec"; path = "../blockbased-delegates-ios.podspec"; sourceTree = "<group>"; };
 		72DE5DAAC7655EAEF5F8AB25 /* Pods-blockbased-delegates_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blockbased-delegates_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blockbased-delegates_Example/Pods-blockbased-delegates_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8E77B697550C723A0A3DAB11 /* Pods-blockbased-delegates_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blockbased-delegates_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blockbased-delegates_Tests/Pods-blockbased-delegates_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8189321D708698000AE745 /* BlockBasedDelegates.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BlockBasedDelegates.podspec; path = ../BlockBasedDelegates.podspec; sourceTree = "<group>"; };
 		AAA2DFC71D6DCF2B00DC3283 /* ScrollViewBlockDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewBlockDelegateTests.swift; sourceTree = "<group>"; };
 		AAA2DFCD1D6ED2C400DC3283 /* TextFieldBlockDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBlockDelegateTests.swift; sourceTree = "<group>"; };
 		AAA2DFD11D6EFA7600DC3283 /* SearchBarBlockDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarBlockDelegateTests.swift; sourceTree = "<group>"; };
@@ -144,7 +145,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				66BAE390D51FEBC95F6A0311 /* blockbased-delegates-ios.podspec */,
+				AA8189321D708698000AE745 /* BlockBasedDelegates.podspec */,
 				E94DD7EAEBECE02BF4818262 /* README.md */,
 				3D5FF8D32014369D06E09691 /* LICENSE */,
 			);
@@ -261,6 +262,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				AA8189331D708698000AE745 /* BlockBasedDelegates.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

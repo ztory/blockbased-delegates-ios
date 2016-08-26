@@ -17,6 +17,9 @@
 		872D2806C4BFBB7967552BAEE7699EDA /* Pods-blockbased-delegates_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87EA957BE5E012B58674FD7644C86FF5 /* Pods-blockbased-delegates_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FA907CFF34BF0330C4CC58A799C9836 /* Pods-blockbased-delegates_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF3421EFC5E5F88BF3CA0B86231F876 /* Pods-blockbased-delegates_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A93DA680832FA2F2F0491E0C68E8F6E7 /* Pods-blockbased-delegates_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD2BD6BBFA9DBE75E4F884819A22B4 /* Pods-blockbased-delegates_Tests-dummy.m */; };
+		AA8189361D70886A000AE745 /* blockbased-delegates.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8189351D7086D2000AE745 /* blockbased-delegates.h */; };
+		AA8189371D70886A000AE745 /* blockbased-delegates.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8189351D7086D2000AE745 /* blockbased-delegates.h */; };
+		AA8189381D70886B000AE745 /* blockbased-delegates.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8189351D7086D2000AE745 /* blockbased-delegates.h */; };
 		B1F8FFCAD3155CC7F284E43DC5B99324 /* BlockSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86B189BF180FB30EDBD8D8724F0E65 /* BlockSearchBarDelegate.swift */; };
 		D02F2CD60B7804E53F27CC420F017381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		D38F510E717EA8A693AC4176B0B6FC84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
@@ -61,6 +64,7 @@
 		A2E2CFD60C98B025B74E3CB2B00F5267 /* Pods-blockbased-delegates_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-blockbased-delegates_Example.modulemap"; sourceTree = "<group>"; };
 		A8627FAC3F5BE533915835D359072F56 /* Pods-blockbased-delegates_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blockbased-delegates_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9AC8C6DBC61DA0D8A2D610AB8BE5075 /* BlockTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlockTextFieldDelegate.swift; sourceTree = "<group>"; };
+		AA8189351D7086D2000AE745 /* blockbased-delegates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blockbased-delegates.h"; sourceTree = "<group>"; };
 		B0E76FF799A95B38DE468FCE7CDA2833 /* Pods_blockbased_delegates_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blockbased_delegates_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB86B189BF180FB30EDBD8D8724F0E65 /* BlockSearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlockSearchBarDelegate.swift; sourceTree = "<group>"; };
 		C09EEFCBDF9388E98085374ED35DB6B6 /* blockbased-delegates-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "blockbased-delegates-ios.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		76E37EDF0C53A18C6A5BF10EC8A88D42 /* blockbased-delegates-ios */ = {
 			isa = PBXGroup;
 			children = (
+				AA8189341D7086A7000AE745 /* Headers */,
 				D5B91E9020EED2240919739539810326 /* Classes */,
 				97A40987AA3B35D569C52E8C08E4A2EB /* Support Files */,
 			);
@@ -189,6 +194,14 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/blockbased-delegates-ios";
+			sourceTree = "<group>";
+		};
+		AA8189341D7086A7000AE745 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AA8189351D7086D2000AE745 /* blockbased-delegates.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		C006792A083C0B7941F772A2BCDAE162 /* Pods-blockbased-delegates_Example */ = {
@@ -238,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA907CFF34BF0330C4CC58A799C9836 /* Pods-blockbased-delegates_Example-umbrella.h in Headers */,
+				AA8189371D70886A000AE745 /* blockbased-delegates.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8051E55E76C8CAA12FAF5ED361C1A8AC /* blockbased-delegates-ios-umbrella.h in Headers */,
+				AA8189361D70886A000AE745 /* blockbased-delegates.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				872D2806C4BFBB7967552BAEE7699EDA /* Pods-blockbased-delegates_Tests-umbrella.h in Headers */,
+				AA8189381D70886B000AE745 /* blockbased-delegates.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
