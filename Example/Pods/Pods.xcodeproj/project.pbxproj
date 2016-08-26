@@ -159,7 +159,7 @@
 		76E37EDF0C53A18C6A5BF10EC8A88D42 /* blockbased-delegates-ios */ = {
 			isa = PBXGroup;
 			children = (
-				D83685198AC5FAD3763EBD08B91535A5 /* blockbased-delegates */,
+				D5B91E9020EED2240919739539810326 /* Classes */,
 				97A40987AA3B35D569C52E8C08E4A2EB /* Support Files */,
 			);
 			name = "blockbased-delegates-ios";
@@ -219,14 +219,6 @@
 				E774312D0B392605F3507CFB4130DA67 /* BlockWebViewDelegate.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		D83685198AC5FAD3763EBD08B91535A5 /* blockbased-delegates */ = {
-			isa = PBXGroup;
-			children = (
-				D5B91E9020EED2240919739539810326 /* Classes */,
-			);
-			path = "blockbased-delegates";
 			sourceTree = "<group>";
 		};
 		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
