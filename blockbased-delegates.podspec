@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'blockbased-delegates'
-  s.module_name      = 'blockbased-delegates'
+  s.name             = 'blockbased-delegates-ios'
+  s.module_name      = 'blockbased-delegates-ios'
   s.version          = '0.1.0'
   s.summary          = 'Convenience files added to add a block as delegate instead'
 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'blockbased-delegates/Classes/*'
+  s.source_files = 'Classes/*'
 
   s.frameworks = 'UIKit'
 end
