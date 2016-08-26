@@ -1,16 +1,16 @@
 PODS:
-  - blockbased-delegates (0.1.0)
+  - blockbased-delegates-ios (0.1.0)
 
 DEPENDENCIES:
-  - blockbased-delegates (from `../`)
+  - blockbased-delegates-ios (from `../`)
 
 EXTERNAL SOURCES:
-  blockbased-delegates:
+  blockbased-delegates-ios:
     :path: "../"
 
 SPEC CHECKSUMS:
-  blockbased-delegates: b7da34c3baa4b890d6bafdc3cd3d11b156cd4d6c
+  blockbased-delegates-ios: 1643d7787aa30ed4abe125cdb45405fb5040e0be
 
-PODFILE CHECKSUM: da9e3d9ef95f560f90a34453afc407f1c8d47c0a
+PODFILE CHECKSUM: 11ad94522286b8195aa2142d1c544d7bfebc6440
 
 COCOAPODS: 1.0.1

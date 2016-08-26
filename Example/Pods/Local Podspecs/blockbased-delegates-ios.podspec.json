@@ -1,0 +1,23 @@
+{
+  "name": "blockbased-delegates-ios",
+  "version": "0.1.0",
+  "summary": "Convenience files added to add a block as delegate instead",
+  "description": "Convenience files added to add a block as delegate instead",
+  "homepage": "https://github.com/ztory/blockbased-delegates-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ChristianRonningen": "christian.ronningen@ztory.com"
+  },
+  "source": {
+    "git": "https://github.com/ztory/blockbased-delegates-ios.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "blockbased-delegates/Classes/**/*",
+  "frameworks": "UIKit"
+}

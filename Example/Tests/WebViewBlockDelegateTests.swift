@@ -10,7 +10,7 @@ import XCTest
 
 import UIKit
 
-@testable import blockbased_delegates
+@testable import blockbased_delegates_ios
 
 class WebViewBlockDelegateTests: XCTestCase {
 

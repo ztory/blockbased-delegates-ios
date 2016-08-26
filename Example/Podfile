@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'blockbased-delegates_Example' do
-  pod 'blockbased-delegates', :path => '../'
+  pod 'blockbased-delegates-ios', :path => '../'
 
   target 'blockbased-delegates_Tests' do
     inherit! :search_paths

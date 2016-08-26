@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/blockbased-delegates/blockbased_delegates.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/blockbased-delegates-ios/blockbased_delegates_ios.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/blockbased-delegates/blockbased_delegates.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/blockbased-delegates-ios/blockbased_delegates_ios.framework"
 fi

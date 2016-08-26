@@ -1,0 +1,6 @@
+framework module blockbased_delegates_ios {
+  umbrella header "blockbased-delegates-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

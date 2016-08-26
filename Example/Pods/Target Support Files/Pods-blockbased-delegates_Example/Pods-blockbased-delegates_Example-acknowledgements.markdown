@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## blockbased-delegates
+## blockbased-delegates-ios
 
 Copyright (c) 2016 ChristianRonningen <christian.ronningen@ztory.com>
 

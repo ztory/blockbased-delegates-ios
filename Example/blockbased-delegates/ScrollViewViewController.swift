@@ -8,7 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ScrollViewViewController: UIViewController {
+
+    @IBOutlet weak var scrollView: UIScrollView!
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,4 +27,3 @@ class ViewController: UIViewController {
     }
 
 }
-

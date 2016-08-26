@@ -1,7 +1,7 @@
 import UIKit
 import XCTest
 
-@testable import blockbased_delegates
+@testable import blockbased_delegates_ios
 
 class GestureRecognizerBlockDelegateTests: XCTestCase {
 
