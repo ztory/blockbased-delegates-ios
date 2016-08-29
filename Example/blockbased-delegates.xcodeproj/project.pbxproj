@@ -48,6 +48,7 @@
 		607FACEB1AFB9204008FA782 /* GestureRecognizerBlockDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerBlockDelegateTests.swift; sourceTree = "<group>"; };
 		72DE5DAAC7655EAEF5F8AB25 /* Pods-blockbased-delegates_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blockbased-delegates_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blockbased-delegates_Example/Pods-blockbased-delegates_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8E77B697550C723A0A3DAB11 /* Pods-blockbased-delegates_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blockbased-delegates_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blockbased-delegates_Tests/Pods-blockbased-delegates_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4A8DB81D744C8C00A10530 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		AA8189321D708698000AE745 /* BlockBasedDelegates.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BlockBasedDelegates.podspec; path = ../BlockBasedDelegates.podspec; sourceTree = "<group>"; };
 		AAA2DFC71D6DCF2B00DC3283 /* ScrollViewBlockDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewBlockDelegateTests.swift; sourceTree = "<group>"; };
 		AAA2DFCD1D6ED2C400DC3283 /* TextFieldBlockDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBlockDelegateTests.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				AA4A8DB81D744C8C00A10530 /* .travis.yml */,
 				AA8189321D708698000AE745 /* BlockBasedDelegates.podspec */,
 				E94DD7EAEBECE02BF4818262 /* README.md */,
 				3D5FF8D32014369D06E09691 /* LICENSE */,
