@@ -14,16 +14,21 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```
+let gesture = UITapGestureRecognizer()
+gesture.blockDelegate = BlockGestureRecognizerDelegate()
+view.addGestureRecognizer(gesture)
+```
 
 ## Requirements
 
 ## Installation
 
-blockbased-delegates is available through [CocoaPods](http://cocoapods.org). To install
+BlockBased-Delegates is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'git@github.com:ztory/Cocoa-Specs.git'
 pod "blockbased-delegates-ios"
 ```
 
@@ -33,4 +38,4 @@ ChristianRonningen, christian.ronningen@ztory.com
 
 ## License
 
-blockbased-delegates is available under the MIT license. See the LICENSE file for more info.
+BlockBased-Delegates is available under the MIT license. See the LICENSE file for more info.
