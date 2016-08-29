@@ -8,15 +8,15 @@
 
 import UIKit
 
-typealias BlockTextFieldShouldChangeCharactersInRange = (textField: UITextField, range: NSRange, string: String) -> Bool
-typealias BlockTextFieldShouldBeginEditing = (textField: UITextField) -> Bool
-typealias BlockTextFieldShouldEndEditing = (textField: UITextField) -> Bool
-typealias BlockTextFieldShouldReturn = (textField: UITextField) -> Bool
-typealias BlockTextFieldShouldClear = (textField: UITextField) -> Bool
-typealias BlockTextFieldDidBeginEditing = (textField: UITextField) -> Void
-typealias BlockTextFieldDidEndEditing = (textField: UITextField) -> Void
+public typealias BlockTextFieldShouldChangeCharactersInRange = (textField: UITextField, range: NSRange, string: String) -> Bool
+public typealias BlockTextFieldShouldBeginEditing = (textField: UITextField) -> Bool
+public typealias BlockTextFieldShouldEndEditing = (textField: UITextField) -> Bool
+public typealias BlockTextFieldShouldReturn = (textField: UITextField) -> Bool
+public typealias BlockTextFieldShouldClear = (textField: UITextField) -> Bool
+public typealias BlockTextFieldDidBeginEditing = (textField: UITextField) -> Void
+public typealias BlockTextFieldDidEndEditing = (textField: UITextField) -> Void
 
-class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
+public class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
 
     var textFieldShouldChangeCharactersInRangeBlock: BlockTextFieldShouldChangeCharactersInRange?
     var textFieldShouldBeginEditingBlock: BlockTextFieldShouldBeginEditing?
@@ -26,13 +26,13 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
     var textFieldDidBeginEditingBlock: BlockTextFieldDidBeginEditing?
     var textFieldDidEndEditingBlock: BlockTextFieldDidEndEditing?
 
-    init(textFieldShouldChangeCharactersInRangeBlock: BlockTextFieldShouldChangeCharactersInRange? = nil,
-         textFieldShouldBeginEditingBlock: BlockTextFieldShouldBeginEditing? = nil,
-         textFieldShouldEndEditingBlock: BlockTextFieldShouldEndEditing? = nil,
-         textFieldShouldReturnBlock: BlockTextFieldShouldReturn? = nil,
-         textFieldShouldClearBlock: BlockTextFieldShouldClear? = nil,
-         textFieldDidBeginEditingBlock: BlockTextFieldDidBeginEditing? = nil,
-         textFieldDidEndEditingBlock: BlockTextFieldDidEndEditing? = nil) {
+    public init(textFieldShouldChangeCharactersInRangeBlock: BlockTextFieldShouldChangeCharactersInRange? = nil,
+                textFieldShouldBeginEditingBlock: BlockTextFieldShouldBeginEditing? = nil,
+                textFieldShouldEndEditingBlock: BlockTextFieldShouldEndEditing? = nil,
+                textFieldShouldReturnBlock: BlockTextFieldShouldReturn? = nil,
+                textFieldShouldClearBlock: BlockTextFieldShouldClear? = nil,
+                textFieldDidBeginEditingBlock: BlockTextFieldDidBeginEditing? = nil,
+                textFieldDidEndEditingBlock: BlockTextFieldDidEndEditing? = nil) {
         super.init()
         
         self.textFieldShouldChangeCharactersInRangeBlock = textFieldShouldChangeCharactersInRangeBlock
@@ -45,7 +45,7 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
     }
     
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    public func textFieldDidEndEditing(textField: UITextField) {
 
         guard let block = textFieldDidEndEditingBlock else {
             return
@@ -54,7 +54,7 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
         block(textField: textField)
     }
 
-    func textFieldDidBeginEditing(textField: UITextField) {
+    public func textFieldDidBeginEditing(textField: UITextField) {
         guard let block = textFieldDidBeginEditingBlock else {
             return
         }
@@ -62,7 +62,7 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
         block(textField: textField)
     }
 
-    func textFieldShouldClear(textField: UITextField) -> Bool {
+    public func textFieldShouldClear(textField: UITextField) -> Bool {
         guard let block = textFieldShouldClearBlock else {
             return true
         }
@@ -70,7 +70,7 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
         return block(textField: textField)
     }
 
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(textField: UITextField) -> Bool {
         guard let block = textFieldShouldReturnBlock else {
             return true
         }
@@ -78,7 +78,7 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
         return block(textField: textField)
     }
 
-    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+    public func textFieldShouldEndEditing(textField: UITextField) -> Bool {
         guard let block = textFieldShouldEndEditingBlock else {
             return true
         }
@@ -86,7 +86,7 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
         return block(textField: textField)
     }
 
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+    public func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
         guard let block = textFieldShouldBeginEditingBlock else {
             return true
         }
@@ -94,7 +94,7 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
         return block(textField: textField)
     }
 
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         guard let block = textFieldShouldChangeCharactersInRangeBlock else {
             return true
         }
@@ -103,7 +103,7 @@ class BlockTextFieldDelegate: NSObject, UITextFieldDelegate {
     }
 }
 
-extension UITextField {
+public extension UITextField {
     private struct AssociatedKeys {
         static var BlockDelegateName = "zm_blockDelegate"
     }

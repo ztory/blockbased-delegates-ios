@@ -9,19 +9,19 @@
 import UIKit
 import ObjectiveC
 
-typealias BlockSearchBarTextDidEndEditing = (searchBar: UISearchBar) -> Void
-typealias BlockSearchBarCancelButtonClicked = (searchBar: UISearchBar) -> Void
-typealias BlockSearchBarSearchButtonClicked = (searchBar: UISearchBar) -> Void
-typealias BlockSearchBarTextDidBeginEditing = (searchBar: UISearchBar) -> Void
-typealias BlockSearchBarBookmarkButtonClicked = (searchBar: UISearchBar) -> Void
-typealias BlockSearchBarResultListButtonClicked = (searchBar: UISearchBar) -> Void
-typealias BlockSearchBarShouldEndEditing = (searchBar: UISearchBar) -> Bool
-typealias BlockSearchBarShouldBeginEditing = (searchBar: UISearchBar) -> Bool
-typealias BlockSearchBarTextDidChange = (searchBar: UISearchBar, searchText: String) -> Void
-typealias BlockSearchBarSelectedScopeButtonIndexDidChange = (searchBar: UISearchBar, selectedScope: Int) -> Void
-typealias BlockSearchBarShouldChangeTextInRange = (searchBar: UISearchBar, range: NSRange, text: String) -> Bool
+public typealias BlockSearchBarTextDidEndEditing = (searchBar: UISearchBar) -> Void
+public typealias BlockSearchBarCancelButtonClicked = (searchBar: UISearchBar) -> Void
+public typealias BlockSearchBarSearchButtonClicked = (searchBar: UISearchBar) -> Void
+public typealias BlockSearchBarTextDidBeginEditing = (searchBar: UISearchBar) -> Void
+public typealias BlockSearchBarBookmarkButtonClicked = (searchBar: UISearchBar) -> Void
+public typealias BlockSearchBarResultListButtonClicked = (searchBar: UISearchBar) -> Void
+public typealias BlockSearchBarShouldEndEditing = (searchBar: UISearchBar) -> Bool
+public typealias BlockSearchBarShouldBeginEditing = (searchBar: UISearchBar) -> Bool
+public typealias BlockSearchBarTextDidChange = (searchBar: UISearchBar, searchText: String) -> Void
+public typealias BlockSearchBarSelectedScopeButtonIndexDidChange = (searchBar: UISearchBar, selectedScope: Int) -> Void
+public typealias BlockSearchBarShouldChangeTextInRange = (searchBar: UISearchBar, range: NSRange, text: String) -> Bool
 
-class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
+public class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
 
     var searchBarTextDidEndEditingBlock: BlockSearchBarTextDidEndEditing?
     var searchBarCancelButtonClickedBlock: BlockSearchBarCancelButtonClicked?
@@ -35,17 +35,17 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
     var searchBarSelectedScopeButtonIndexDidChangeBlock: BlockSearchBarSelectedScopeButtonIndexDidChange?
     var searchBarShouldChangeTextInRangeBlock: BlockSearchBarShouldChangeTextInRange?
 
-    init(searchBarTextDidEndEditingBlock: BlockSearchBarTextDidEndEditing? = nil,
-         searchBarCancelButtonClickedBlock: BlockSearchBarCancelButtonClicked? = nil,
-         searchBarSearchButtonClickedBlock: BlockSearchBarSearchButtonClicked? = nil,
-         searchBarTextDidBeginEditingBlock: BlockSearchBarTextDidBeginEditing? = nil,
-         searchBarBookmarkButtonClickedBlock: BlockSearchBarBookmarkButtonClicked? = nil,
-         searchBarResultListButtonClickedBlock: BlockSearchBarResultListButtonClicked? = nil,
-         searchBarShouldEndEditingBlock: BlockSearchBarShouldEndEditing? = nil,
-         searchBarShouldBeginEditingBlock: BlockSearchBarShouldBeginEditing? = nil,
-         searchBarTextDidChangeBlock: BlockSearchBarTextDidChange? = nil,
-         searchBarSelectedScopeButtonIndexDidChangeBlock: BlockSearchBarSelectedScopeButtonIndexDidChange? = nil,
-         searchBarShouldChangeTextInRangeBlock: BlockSearchBarShouldChangeTextInRange? = nil) {
+    public init(searchBarTextDidEndEditingBlock: BlockSearchBarTextDidEndEditing? = nil,
+                searchBarCancelButtonClickedBlock: BlockSearchBarCancelButtonClicked? = nil,
+                searchBarSearchButtonClickedBlock: BlockSearchBarSearchButtonClicked? = nil,
+                searchBarTextDidBeginEditingBlock: BlockSearchBarTextDidBeginEditing? = nil,
+                searchBarBookmarkButtonClickedBlock: BlockSearchBarBookmarkButtonClicked? = nil,
+                searchBarResultListButtonClickedBlock: BlockSearchBarResultListButtonClicked? = nil,
+                searchBarShouldEndEditingBlock: BlockSearchBarShouldEndEditing? = nil,
+                searchBarShouldBeginEditingBlock: BlockSearchBarShouldBeginEditing? = nil,
+                searchBarTextDidChangeBlock: BlockSearchBarTextDidChange? = nil,
+                searchBarSelectedScopeButtonIndexDidChangeBlock: BlockSearchBarSelectedScopeButtonIndexDidChange? = nil,
+                searchBarShouldChangeTextInRangeBlock: BlockSearchBarShouldChangeTextInRange? = nil) {
         super.init()
         
         self.searchBarTextDidEndEditingBlock = searchBarTextDidEndEditingBlock
@@ -61,7 +61,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         self.searchBarShouldChangeTextInRangeBlock = searchBarShouldChangeTextInRangeBlock
     }
     
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+    public func searchBarTextDidEndEditing(searchBar: UISearchBar) {
         guard let block = searchBarTextDidEndEditingBlock else {
             return
         }
@@ -69,7 +69,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         block(searchBar: searchBar)
     }
 
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+    public func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         guard let block = searchBarCancelButtonClickedBlock else {
             return
         }
@@ -77,7 +77,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         block(searchBar: searchBar)
     }
 
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+    public func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         guard let block = searchBarSearchButtonClickedBlock else {
             return
         }
@@ -85,7 +85,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         block(searchBar: searchBar)
     }
 
-    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+    public func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         guard let block = searchBarTextDidBeginEditingBlock else {
             return
         }
@@ -93,7 +93,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         block(searchBar: searchBar)
     }
 
-    func searchBarBookmarkButtonClicked(searchBar: UISearchBar) {
+    public func searchBarBookmarkButtonClicked(searchBar: UISearchBar) {
         guard let block = searchBarBookmarkButtonClickedBlock else {
             return
         }
@@ -101,7 +101,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         block(searchBar: searchBar)
     }
 
-    func searchBarResultsListButtonClicked(searchBar: UISearchBar) {
+    public func searchBarResultsListButtonClicked(searchBar: UISearchBar) {
         guard let block = searchBarResultListButtonClickedBlock else {
             return
         }
@@ -109,7 +109,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         block(searchBar: searchBar)
     }
 
-    func searchBarShouldEndEditing(searchBar: UISearchBar) -> Bool {
+    public func searchBarShouldEndEditing(searchBar: UISearchBar) -> Bool {
         guard let block = searchBarShouldEndEditingBlock else {
             return true
         }
@@ -117,7 +117,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         return block(searchBar: searchBar)
     }
 
-    func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
+    public func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
         guard let block = searchBarShouldBeginEditingBlock else {
             return true
         }
@@ -125,7 +125,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         return block(searchBar: searchBar)
     }
 
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+    public func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         guard let block = searchBarTextDidChangeBlock else {
             return
         }
@@ -133,7 +133,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         block(searchBar: searchBar, searchText: searchText)
     }
 
-    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+    public func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         guard let block = searchBarSelectedScopeButtonIndexDidChangeBlock else {
             return
         }
@@ -141,7 +141,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
         block(searchBar: searchBar, selectedScope: selectedScope)
     }
 
-    func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    public func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         guard let block = searchBarShouldChangeTextInRangeBlock else {
             return true
         }
@@ -150,7 +150,7 @@ class BlockSearchBarDelegate: NSObject, UISearchBarDelegate {
     }
 }
 
-extension UISearchBar {
+public extension UISearchBar {
     private struct AssociatedKeys {
         static var BlockDelegateName = "zm_blockDelegate"
     }

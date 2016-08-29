@@ -3,11 +3,11 @@ import UIKit
 
 
 
-typealias BlockGestureDelegateShouldBeginBlock = ( gestureRecognizer: UIGestureRecognizer ) -> Bool
-typealias BlockGestureDelegateShouldRecieveTouchBlock = ( gestureRecognizer: UIGestureRecognizer, touch: UITouch ) -> Bool
-typealias BlockGestureDelegateShouldRequireFailureOfGesture = ( gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer ) -> Bool
-typealias BlockGestureDelegateShouldBeRequireToFailureByGesture = ( gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer ) -> Bool
-typealias BlockGestureDelegateShouldRecognizeSimultaneouslyBlock = ( gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer ) -> Bool
+public typealias BlockGestureDelegateShouldBeginBlock = ( gestureRecognizer: UIGestureRecognizer ) -> Bool
+public typealias BlockGestureDelegateShouldRecieveTouchBlock = ( gestureRecognizer: UIGestureRecognizer, touch: UITouch ) -> Bool
+public typealias BlockGestureDelegateShouldRequireFailureOfGesture = ( gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer ) -> Bool
+public typealias BlockGestureDelegateShouldBeRequireToFailureByGesture = ( gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer ) -> Bool
+public typealias BlockGestureDelegateShouldRecognizeSimultaneouslyBlock = ( gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer ) -> Bool
 //@available(iOS 9.0, *)
 //typealias BlockGestureDelegateShouldRecievePressBlock = ( gestureRecognizer: UIGestureRecognizer, press: UIPress ) -> Bool
 
@@ -17,7 +17,7 @@ typealias BlockGestureDelegateShouldRecognizeSimultaneouslyBlock = ( gestureReco
 
  Will return default values if no block is present
  */
-class BlockGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
+public class BlockGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
 
     var gestureRecognizerShouldBeginBlock: BlockGestureDelegateShouldBeginBlock?
     var gestureRecognizerShouldRecieveTouchBlock: BlockGestureDelegateShouldRecieveTouchBlock?
@@ -44,11 +44,11 @@ class BlockGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
 //        self.gestureRecognizerShouldRecognizeSimultaneouslyBlock = gestureRecognizerShouldRecognizeSimultaneouslyBlock
 //    }
 
-    init(gestureRecognizerShouldBeginBlock: BlockGestureDelegateShouldBeginBlock? = nil,
-         gestureRecognizerShouldRecieveTouchBlock: BlockGestureDelegateShouldRecieveTouchBlock? = nil,
-         gestureRecognizerShouldRequireFailureOfGestureBlock: BlockGestureDelegateShouldRequireFailureOfGesture? = nil,
-         gestureRecognizerShouldBeRequiredToFailBlock: BlockGestureDelegateShouldBeRequireToFailureByGesture? = nil,
-         gestureRecognizerShouldRecognizeSimultaneouslyBlock: BlockGestureDelegateShouldBeRequireToFailureByGesture? = nil) {
+    public init(gestureRecognizerShouldBeginBlock: BlockGestureDelegateShouldBeginBlock? = nil,
+                gestureRecognizerShouldRecieveTouchBlock: BlockGestureDelegateShouldRecieveTouchBlock? = nil,
+                gestureRecognizerShouldRequireFailureOfGestureBlock: BlockGestureDelegateShouldRequireFailureOfGesture? = nil,
+                gestureRecognizerShouldBeRequiredToFailBlock: BlockGestureDelegateShouldBeRequireToFailureByGesture? = nil,
+                gestureRecognizerShouldRecognizeSimultaneouslyBlock: BlockGestureDelegateShouldBeRequireToFailureByGesture? = nil) {
         super.init()
 
         self.gestureRecognizerShouldBeginBlock = gestureRecognizerShouldBeginBlock
@@ -58,7 +58,7 @@ class BlockGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
         self.gestureRecognizerShouldRecognizeSimultaneouslyBlock = gestureRecognizerShouldRecognizeSimultaneouslyBlock
     }
 
-    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
         guard let block = gestureRecognizerShouldBeginBlock else {
             return true
         }
@@ -75,40 +75,40 @@ class BlockGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
 //        return true
 //    }
 
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
         guard let block = gestureRecognizerShouldRecieveTouchBlock else {
             return true
         }
-        
+
         return block(gestureRecognizer: gestureRecognizer, touch: touch)
     }
 
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOfGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOfGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         guard let block = gestureRecognizerShouldRequireFailureOfGestureBlock else {
             return false
         }
-        
+
         return block(gestureRecognizer: gestureRecognizer, otherGestureRecognizer: otherGestureRecognizer)
     }
 
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailByGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailByGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         guard let block = gestureRecognizerShouldBeRequiredToFailBlock else {
             return false
         }
-        
+
         return block(gestureRecognizer: gestureRecognizer, otherGestureRecognizer: otherGestureRecognizer)
     }
 
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         guard let block = gestureRecognizerShouldRecognizeSimultaneouslyBlock else {
             return false
         }
-        
+
         return block(gestureRecognizer: gestureRecognizer, otherGestureRecognizer: otherGestureRecognizer)
     }
 }
 
-extension UIGestureRecognizer {
+public extension UIGestureRecognizer {
 
     private struct AssociatedKeys {
         static var BlockDelegateName = "zm_blockDelegate"

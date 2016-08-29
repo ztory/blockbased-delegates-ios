@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
     Convenience files added to add a block as delegate instead
+    Current supported is UIWebVIewDelegate, UIScrollViewDelegate, UIGestureRecognizerDelegate, UISearchBarDelegate
                        DESC
 
   s.homepage         = 'https://github.com/ztory/blockbased-delegates-ios'
@@ -24,7 +25,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.requires_arc = true
-  s.source_files = 'Classes/*.swift', 'Headers/*.h'
+  s.source_files = 'Classes/*.swift'
 
   s.frameworks = 'UIKit'
 end
