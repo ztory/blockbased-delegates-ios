@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.summary          = 'Convenience files added to add a block as delegate instead'
 
   s.description      = <<-DESC
-    Convenience files added to add a block as delegate instead
     Current supported is UIWebVIewDelegate, UIScrollViewDelegate, UIGestureRecognizerDelegate, UISearchBarDelegate
+    Add issue on github if more is wanted
                        DESC
 
   s.homepage         = 'https://github.com/ztory/blockbased-delegates-ios'
