@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/ztory/blockbased-delegates-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ChristianRonningen' => 'christian.ronningen@ztory.com' }
-  s.source           = { :git => 'git@github.com:ztory/blockbased-delegates-ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ztory/blockbased-delegates-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 

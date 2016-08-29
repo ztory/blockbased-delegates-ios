@@ -1,9 +1,6 @@
 # blockbased-delegates
 
-[![CI Status](http://img.shields.io/travis/ChristianRonningen/blockbased-delegates.svg?style=flat)](https://travis-ci.org/ChristianRonningen/blockbased-delegates)
-[![Version](https://img.shields.io/cocoapods/v/blockbased-delegates.svg?style=flat)](http://cocoapods.org/pods/blockbased-delegates)
-[![License](https://img.shields.io/cocoapods/l/blockbased-delegates.svg?style=flat)](http://cocoapods.org/pods/blockbased-delegates)
-[![Platform](https://img.shields.io/cocoapods/p/blockbased-delegates.svg?style=flat)](http://cocoapods.org/pods/blockbased-delegates)
+[![CI Status](https://travis-ci.org/ztory/blockbased-delegates-ios.svg?branch=master)](https://travis-ci.org/ChristianRonningen/blockbased-delegates-ios)
 
 ## Current implementation
 - [x] UIWebViewDelegate
