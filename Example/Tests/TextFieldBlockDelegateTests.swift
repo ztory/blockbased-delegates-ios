@@ -28,6 +28,22 @@ class TextFieldBlockDelegateTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    
+    func test_blockdelegate_should_be_nil() {
+        var text: UITextField? = UITextField()
+        var blockD: BlockTextFieldDelegate? = BlockTextFieldDelegate()
+        text!.blockDelegate = blockD
+        
+        weak var weakBlockDelegate = blockD
+        
+        XCTAssertNotNil(weakBlockDelegate)
+        
+        blockD = nil
+        text!.blockDelegate = nil
+        text = nil
+        
+        XCTAssertNil(weakBlockDelegate)
+    }
 
     func test_delegate_has_been_set() {
         if let delegate = textField.delegate as? BlockTextFieldDelegate {

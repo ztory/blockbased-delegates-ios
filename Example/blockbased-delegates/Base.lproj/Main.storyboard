@@ -5,6 +5,42 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--TextField-->
+        <scene sceneID="MFK-c3-P3X">
+            <objects>
+                <viewController title="TextField" id="hMO-UF-Ate" customClass="TextFieldViewController" customModule="blockbased_delegates_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dR3-2i-tDo"/>
+                        <viewControllerLayoutGuide type="bottom" id="zVX-qH-K9k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cLh-WW-jit">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nkK-lT-y84">
+                                <rect key="frame" x="234" y="497" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="gEW-4D-pzs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nkK-lT-y84" firstAttribute="centerY" secondItem="cLh-WW-jit" secondAttribute="centerY" id="3lp-MT-rPJ"/>
+                            <constraint firstItem="nkK-lT-y84" firstAttribute="centerX" secondItem="cLh-WW-jit" secondAttribute="centerX" id="RuP-of-Gda"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TextField" id="EKD-qV-JIl"/>
+                    <connections>
+                        <outlet property="textField" destination="nkK-lT-y84" id="Exp-Sc-dR8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEg-3O-jLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="-484"/>
+        </scene>
         <!--ScrollView-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -38,6 +74,92 @@
             </objects>
             <point key="canvasLocation" x="1370" y="628"/>
         </scene>
+        <!--SearchBar-->
+        <scene sceneID="CDg-yR-5lH">
+            <objects>
+                <viewController title="SearchBar" id="Ivf-gm-DAh" customClass="SearchBarViewController" customModule="blockbased_delegates_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7gF-la-XD6"/>
+                        <viewControllerLayoutGuide type="bottom" id="u8b-hq-0lM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ym6-Y3-54w">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xMt-im-pgv">
+                                <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xMt-im-pgv" firstAttribute="top" secondItem="7gF-la-XD6" secondAttribute="bottom" id="27y-4x-8qp"/>
+                            <constraint firstItem="xMt-im-pgv" firstAttribute="leading" secondItem="ym6-Y3-54w" secondAttribute="leading" id="ddq-1O-iMk"/>
+                            <constraint firstAttribute="trailing" secondItem="xMt-im-pgv" secondAttribute="trailing" id="yN6-LO-EP2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SearchBar" id="haa-4j-bsF"/>
+                    <connections>
+                        <outlet property="searchBar" destination="xMt-im-pgv" id="cbf-L9-ypx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wg5-Xh-uSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="630"/>
+        </scene>
+        <!--Gesture-->
+        <scene sceneID="xdh-6L-h4F">
+            <objects>
+                <viewController title="Gesture" id="QbU-B3-MYl" customClass="GestureViewController" customModule="blockbased_delegates_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="84k-pH-oo9"/>
+                        <viewControllerLayoutGuide type="bottom" id="keY-dY-5GZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cok-vs-sXc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gesture" id="lYY-Bo-pIo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTW-MW-3ZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="1794"/>
+        </scene>
+        <!--WebView-->
+        <scene sceneID="6oB-JX-Qv9">
+            <objects>
+                <viewController title="WebView" id="ztP-mM-qpe" customClass="WebViewViewController" customModule="blockbased_delegates_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f10-M9-27h"/>
+                        <viewControllerLayoutGuide type="bottom" id="2KM-SM-RA3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6E4-Rn-Tqf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wp-eQ-lBx">
+                                <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2KM-SM-RA3" firstAttribute="top" secondItem="3wp-eQ-lBx" secondAttribute="bottom" id="XTp-iA-QVg"/>
+                            <constraint firstItem="3wp-eQ-lBx" firstAttribute="top" secondItem="f10-M9-27h" secondAttribute="bottom" id="cR0-4l-Qog"/>
+                            <constraint firstAttribute="trailing" secondItem="3wp-eQ-lBx" secondAttribute="trailing" id="nM6-uT-DSm"/>
+                            <constraint firstItem="3wp-eQ-lBx" firstAttribute="leading" secondItem="6E4-Rn-Tqf" secondAttribute="leading" id="nrb-BD-8Xa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="WebView" id="N4A-zm-iI9"/>
+                    <connections>
+                        <outlet property="webView" destination="3wp-eQ-lBx" id="rZT-uY-D0u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anz-ra-Woi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2216" y="1796"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="P2j-u4-5nm">
             <objects>
@@ -49,6 +171,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Yog-tR-iYj"/>
+                        <segue destination="QbU-B3-MYl" kind="relationship" relationship="viewControllers" id="1Zt-qi-0j8"/>
+                        <segue destination="ztP-mM-qpe" kind="relationship" relationship="viewControllers" id="dRm-5t-7Z2"/>
+                        <segue destination="Ivf-gm-DAh" kind="relationship" relationship="viewControllers" id="GI8-hn-BIa"/>
+                        <segue destination="hMO-UF-Ate" kind="relationship" relationship="viewControllers" id="k7E-XH-EWR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKA-JV-Iip" userLabel="First Responder" sceneMemberID="firstResponder"/>

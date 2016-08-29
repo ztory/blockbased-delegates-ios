@@ -22,6 +22,22 @@ class GestureRecognizerBlockDelegateTests: XCTestCase {
         super.tearDown()
     }
 
+    func test_blockdelegate_should_be_nil() {
+        var g: UIGestureRecognizer? = UIGestureRecognizer()
+        var blockD: BlockGestureRecognizerDelegate? = BlockGestureRecognizerDelegate()
+        g!.blockDelegate = blockD
+        
+        weak var weakBlockDelegate = blockD
+        
+        XCTAssertNotNil(weakBlockDelegate)
+        
+        blockD = nil
+        g!.blockDelegate = nil
+        g = nil
+        
+        XCTAssertNil(weakBlockDelegate)
+    }
+    
     func test_delegate_has_been_set() {
         if let delegate = gesture.delegate as? BlockGestureRecognizerDelegate {
             XCTAssertEqual(delegate, sut)

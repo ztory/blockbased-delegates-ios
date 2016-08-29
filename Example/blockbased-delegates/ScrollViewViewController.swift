@@ -8,6 +8,8 @@
 
 import UIKit
 
+import blockbased_delegates_ios
+
 class ScrollViewViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
@@ -19,6 +21,11 @@ class ScrollViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        scrollView.contentSize = CGSize(width: 2000, height: 2000)
+        scrollView.blockDelegate = BlockScrollviewDelegate(scrollViewDidScrollBlock: { _ in
+            NSLog("We scrolled")
+        })
     }
 
     override func didReceiveMemoryWarning() {

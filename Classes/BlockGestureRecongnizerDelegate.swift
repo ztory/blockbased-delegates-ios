@@ -121,7 +121,7 @@ public extension UIGestureRecognizer {
         set {
             delegate = newValue
 
-            objc_setAssociatedObject(self, &AssociatedKeys.BlockDelegateName, newValue as! AnyObject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &AssociatedKeys.BlockDelegateName, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.BlockDelegateName) as? BlockGestureRecognizerDelegate

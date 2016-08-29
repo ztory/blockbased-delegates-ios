@@ -30,7 +30,23 @@ class WebViewBlockDelegateTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-
+    
+    func test_blockdelegate_should_be_nil() {
+        var web: UIWebView? = UIWebView()
+        var blockD: BlockWebViewDelegate? = BlockWebViewDelegate()
+        web!.blockDelegate = blockD
+        
+        weak var weakBlockDelegate = blockD
+        
+        XCTAssertNotNil(weakBlockDelegate)
+        
+        blockD = nil
+        web!.blockDelegate = nil
+        web = nil
+        
+        XCTAssertNil(weakBlockDelegate)
+    }
+    
     func test_delegate_has_been_set() {
         if let delegate = webView.delegate as? BlockWebViewDelegate {
             XCTAssertEqual(delegate, sut)

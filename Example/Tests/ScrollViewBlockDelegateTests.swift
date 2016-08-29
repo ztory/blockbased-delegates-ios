@@ -29,6 +29,22 @@ class ScrollViewBlockDelegateTests: XCTestCase {
         super.tearDown()
     }
 
+    func test_blockdelegate_should_be_nil() {
+        var scroll: UIScrollView? = UIScrollView()
+        var blockD: BlockScrollviewDelegate? = BlockScrollviewDelegate()
+        scroll!.blockDelegate = blockD
+        
+        weak var weakBlockDelegate = blockD
+        
+        XCTAssertNotNil(weakBlockDelegate)
+        
+        blockD = nil
+        scroll!.blockDelegate = nil
+        scroll = nil
+        
+        XCTAssertNil(weakBlockDelegate)
+    }
+    
     func test_delegate_has_been_set() {
         if let delegate = scrollView.delegate as? BlockScrollviewDelegate {
             XCTAssertEqual(delegate, sut)

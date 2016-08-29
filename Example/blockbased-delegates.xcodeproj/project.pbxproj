@@ -16,6 +16,10 @@
 		607FACEC1AFB9204008FA782 /* GestureRecognizerBlockDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* GestureRecognizerBlockDelegateTests.swift */; };
 		863ADBE28B47C27946A4C9FA /* Pods_blockbased_delegates_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0478F624E45F9C1D44059E6 /* Pods_blockbased_delegates_Tests.framework */; };
 		AA8189331D708698000AE745 /* BlockBasedDelegates.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AA8189321D708698000AE745 /* BlockBasedDelegates.podspec */; };
+		AA8CDCC91D745B73007C8FF2 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CDCC81D745B73007C8FF2 /* GestureViewController.swift */; };
+		AA8CDCCB1D745C39007C8FF2 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CDCCA1D745C39007C8FF2 /* WebViewViewController.swift */; };
+		AA8CDCCD1D745DDD007C8FF2 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CDCCC1D745DDD007C8FF2 /* SearchBarViewController.swift */; };
+		AA8CDCCF1D74602C007C8FF2 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CDCCE1D74602C007C8FF2 /* TextFieldViewController.swift */; };
 		AAA2DFC81D6DCF2B00DC3283 /* ScrollViewBlockDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2DFC71D6DCF2B00DC3283 /* ScrollViewBlockDelegateTests.swift */; };
 		AAA2DFCE1D6ED2C400DC3283 /* TextFieldBlockDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2DFCD1D6ED2C400DC3283 /* TextFieldBlockDelegateTests.swift */; };
 		AAA2DFD21D6EFA7600DC3283 /* SearchBarBlockDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2DFD11D6EFA7600DC3283 /* SearchBarBlockDelegateTests.swift */; };
@@ -50,6 +54,10 @@
 		8E77B697550C723A0A3DAB11 /* Pods-blockbased-delegates_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blockbased-delegates_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blockbased-delegates_Tests/Pods-blockbased-delegates_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA4A8DB81D744C8C00A10530 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		AA8189321D708698000AE745 /* BlockBasedDelegates.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BlockBasedDelegates.podspec; path = ../BlockBasedDelegates.podspec; sourceTree = "<group>"; };
+		AA8CDCC81D745B73007C8FF2 /* GestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
+		AA8CDCCA1D745C39007C8FF2 /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		AA8CDCCC1D745DDD007C8FF2 /* SearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		AA8CDCCE1D74602C007C8FF2 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		AAA2DFC71D6DCF2B00DC3283 /* ScrollViewBlockDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewBlockDelegateTests.swift; sourceTree = "<group>"; };
 		AAA2DFCD1D6ED2C400DC3283 /* TextFieldBlockDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBlockDelegateTests.swift; sourceTree = "<group>"; };
 		AAA2DFD11D6EFA7600DC3283 /* SearchBarBlockDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarBlockDelegateTests.swift; sourceTree = "<group>"; };
@@ -104,7 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				AA8CDCCE1D74602C007C8FF2 /* TextFieldViewController.swift */,
 				607FACD71AFB9204008FA782 /* ScrollViewViewController.swift */,
+				AA8CDCC81D745B73007C8FF2 /* GestureViewController.swift */,
+				AA8CDCCA1D745C39007C8FF2 /* WebViewViewController.swift */,
+				AA8CDCCC1D745DDD007C8FF2 /* SearchBarViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -375,7 +387,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8CDCC91D745B73007C8FF2 /* GestureViewController.swift in Sources */,
+				AA8CDCCD1D745DDD007C8FF2 /* SearchBarViewController.swift in Sources */,
+				AA8CDCCF1D74602C007C8FF2 /* TextFieldViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ScrollViewViewController.swift in Sources */,
+				AA8CDCCB1D745C39007C8FF2 /* WebViewViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

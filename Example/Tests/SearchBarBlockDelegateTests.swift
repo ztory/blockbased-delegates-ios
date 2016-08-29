@@ -28,6 +28,22 @@ class SearchBarBlockDelegateTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    
+    func test_blockdelegate_should_be_nil() {
+        var search: UISearchBar? = UISearchBar()
+        var blockD: BlockSearchBarDelegate? = BlockSearchBarDelegate()
+        search!.blockDelegate = blockD
+        
+        weak var weakBlockDelegate = blockD
+        
+        XCTAssertNotNil(weakBlockDelegate)
+        
+        blockD = nil
+        search!.blockDelegate = nil
+        search = nil
+        
+        XCTAssertNil(weakBlockDelegate)
+    }
 
     func test_delegate_has_been_set() {
         if let delegate = searchBar.delegate as? BlockSearchBarDelegate {
